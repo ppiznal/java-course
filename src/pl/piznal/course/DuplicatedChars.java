@@ -14,26 +14,29 @@ public class DuplicatedChars {
     int attempts = 10;
     long start, finish;
 
-    System.out.println("Starting stream version for Jaskolka");
+    System.out.println(
+        "Starting stream version for Jaskolka, " + notDuplicatedCharacters.apply("Jaskolka"));
     start = System.currentTimeMillis();
     IntStream.range(1, attempts).forEach(i -> notDuplicatedCharacters.apply("Jaskolka"));
     finish = System.currentTimeMillis();
     System.out.println(format("It took %d miliseconds for %d attemps", finish - start, attempts));
 
-    System.out.println("Starting algo version for Jaskolka");
+    System.out
+        .println("Starting algo version for Jaskolka, " + notDuplicatedCharactesAlgo("Jaskolka"));
     start = System.currentTimeMillis();
     IntStream.range(1, attempts).forEach(i -> notDuplicatedCharactesAlgo("Jaskolka"));
     finish = System.currentTimeMillis();
     System.out.println(format("It took %d miliseconds for %d attemps", finish - start, attempts));
 
-    System.out.println("Starting stream version for Wilk");
+    System.out
+        .println("Starting stream version for Wilk, " + notDuplicatedCharacters.apply("Wilk"));
     start = System.currentTimeMillis();
     IntStream.range(1, attempts).forEach(i -> notDuplicatedCharacters.apply("Wilk"));
     finish = System.currentTimeMillis();
     System.out.println(format("It took %d miliseconds for %d attemps", finish - start, attempts));
 
 
-    System.out.println("Starting algo version for Wilk");
+    System.out.println("Starting algo version for Wilk, " + notDuplicatedCharactesAlgo("Wilk"));
     start = System.currentTimeMillis();
     IntStream.range(1, attempts).forEach(i -> notDuplicatedCharactesAlgo("Wilk"));
     finish = System.currentTimeMillis();
