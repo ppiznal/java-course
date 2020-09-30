@@ -14,26 +14,26 @@ public class DuplicatedChars {
     start = System.currentTimeMillis();
     IntStream.range(1, attempts).forEach(i -> notDuplicatedCharacters.test("Jaskolka"));
     finish = System.currentTimeMillis();
-    System.out.println(format("It took %d miliseconds for %d probes", finish - start, attempts));
+    System.out.println(format("It took %d miliseconds for %d attemps", finish - start, attempts));
 
     System.out.println("Starting algo version for Jaskolka");
     start = System.currentTimeMillis();
     IntStream.range(1, attempts).forEach(i -> notDuplicatedCharactesAlgo("Jaskolka"));
     finish = System.currentTimeMillis();
-    System.out.println(format("It took %d miliseconds for %d probes", finish - start, attempts));
+    System.out.println(format("It took %d miliseconds for %d attemps", finish - start, attempts));
 
     System.out.println("Starting stream version for Wilk");
     start = System.currentTimeMillis();
     IntStream.range(1, attempts).forEach(i -> notDuplicatedCharacters.test("Wilk"));
     finish = System.currentTimeMillis();
-    System.out.println(format("It took %d miliseconds for %d probes", finish - start, attempts));
+    System.out.println(format("It took %d miliseconds for %d attemps", finish - start, attempts));
 
 
     System.out.println("Starting algo version for Wilk");
     start = System.currentTimeMillis();
     IntStream.range(1, attempts).forEach(i -> notDuplicatedCharactesAlgo("Wilk"));
     finish = System.currentTimeMillis();
-    System.out.println(format("It took %d miliseconds for %d probes", finish - start, attempts));
+    System.out.println(format("It took %d miliseconds for %d attemps", finish - start, attempts));
   }
 
 
